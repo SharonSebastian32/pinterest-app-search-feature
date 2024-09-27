@@ -1,3 +1,17 @@
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
 const arr = [
   {
     name: "Petals of roses",
@@ -37,16 +51,29 @@ const arr = [
   },
 ];
 
+const escapeHTML = (str) =>
+  str.replace(
+    /[&<>'"]/g,
+    (tag) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[
+        tag
+      ] || tag)
+  );
+
 const showTheCards = (images) => {
   const container = document.querySelector(".container");
   if (container)
-    container.innerHTML = images.map(
-      (obj) =>
-        `<div class='box'>
-      <img src="${obj.image}" class='cursor-pointer' alt="${obj.name}">
-      <div class='captions'>${obj.name}</div>
+    container.innerHTML = images
+      .map(
+        (obj) =>
+          `<div class='box'>
+      <img src="${escapeHTML(
+        obj.image
+      )}" class='cursor-pointer' alt="${escapeHTML(obj.name)}">
+      <div class='captions'>${escapeHTML(obj.name)}</div>
     </div>`
-    );
+      )
+      .join("");
 };
 
 const handleSearchFunctionality = () => {

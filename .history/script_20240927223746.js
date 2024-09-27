@@ -36,17 +36,22 @@ const arr = [
       "https://images.unsplash.com/photo-1509459331813-67a0c10e527c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
+ 
 
 const showTheCards = (images) => {
   const container = document.querySelector(".container");
   if (container)
-    container.innerHTML = images.map(
-      (obj) =>
-        `<div class='box'>
-      <img src="${obj.image}" class='cursor-pointer' alt="${obj.name}">
-      <div class='captions'>${obj.name}</div>
+    container.innerHTML = images
+      .map(
+        (obj) =>
+          `<div class='box'>
+      <img src="${ (
+        obj.image
+      )}" class='cursor-pointer' alt="${ (obj.name)}">
+      <div class='captions'>${ (obj.name)}</div>
     </div>`
-    );
+      )
+      
 };
 
 const handleSearchFunctionality = () => {
