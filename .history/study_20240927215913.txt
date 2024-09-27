@@ -1,0 +1,30 @@
+var home = document.querySelector("#home");
+
+home.addEventListener("mouseenter", function () {
+  home.style.color = "red";
+});
+
+home.addEventListener("mouseleave", function () {
+  home.style.color = "black";
+});
+
+  
+
+
+  iterate each array objects 
+
+
+function showTheCards() {
+    arr.forEach(function (obj) {
+      
+  });
+
+
+
+
+}
+
+
+
+for filetring
+we have the following
