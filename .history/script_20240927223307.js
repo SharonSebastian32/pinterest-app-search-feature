@@ -71,3 +71,9 @@ function handleSearchFunctionality() {
 }
 handleSearchFunctionality();
 showTheCards();
+
+
+
+
+
+
