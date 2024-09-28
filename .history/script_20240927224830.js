@@ -59,12 +59,7 @@ const arr = [
   {
     name: "Wow Super!",
     image:
-      "https://images.unsplash.com/photo-1726998809555-f94e544d24df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    name: "Perfumes from the natural Pink Roses",
-    image:
-      "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media.istockphoto.com/id/2154838932/photo/photo-of-cheerful-loverly-woman-wear-trendy-clothes-sit-floor-empty-space-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=3w4D1Q1IKMYW_gUxJSgTOSj84mhUHGRY9VWs5HJJnM8=",
   },
 ];
 
