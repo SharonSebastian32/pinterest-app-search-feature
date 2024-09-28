@@ -80,33 +80,5 @@ const showTheCards = (images) => {
     );
 };
 
+ 
 showTheCards(arr);
-
-
-
-
-
-
-
-
-
-
-
-
-const handleSearchFunctionality = () => {
-  const input = document.querySelector("#searchinput");
-  const overlay = document.querySelector(".overlay");
-  if (!input || !overlay) return;
-
-  input.addEventListener("focus", () => (overlay.style.display = "block"));
-  input.addEventListener("blur", () => (overlay.style.display = "none"));
-  input.addEventListener("input", () => {
-    const searchTerm = input.value.toLowerCase();
-    showTheCards(
-      arr.filter((obj) => obj.name.toLowerCase().includes(searchTerm))
-    );
-  });
-};
-
-// Initialize immediately
-handleSearchFunctionality();

@@ -82,17 +82,6 @@ const showTheCards = (images) => {
 
 showTheCards(arr);
 
-
-
-
-
-
-
-
-
-
-
-
 const handleSearchFunctionality = () => {
   const input = document.querySelector("#searchinput");
   const overlay = document.querySelector(".overlay");
